@@ -11,15 +11,15 @@
 <body>
     <main>
         <!-- navigation -->
-        <nav>
+        <nav class="nav-bar">
             <a href="#home">
                 <div id="logo"></div>
             </a>
             <div class="list">
-                <a href="#home">Home</a>
-                <a href="#profile">Profile</a>
-                <a href="#achievement">Achievement</a>
-                <a href="#message-us">Message Us</a>
+                <a class="nav-list" href="#home">Home</a>
+                <a class="nav-list" href="#about-me">About Me</a>
+                <a class="nav-list" href="#profile">Profile</a>
+                <a class="nav-list" href="#contact">Contact</a>
             </div>
         </nav>
         <!-- Content -->
@@ -28,25 +28,49 @@
             <header>
                 <h1>Hello <span id="username"></span>, Welcome</h1>
             </header>
+            <img src="./img/christopher-gower-_aXa21cf7rY-unsplash.jpg" alt="UI Designer">
+            <img src="./img/kari-shea-1SAnrIxw5OY-unsplash.jpg" alt="Software Engineer">
+            <img src="./img/nordwood-themes-q8U1YgBaRQk-unsplash.jpg" alt="Part-Time Teacher">
+        </section>
+        <!-- About Me -->
+        <section id="about-me">
+            <div class="about-content">
+                <header>
+                    <h1>About Me</h1>
+                </header>
+                <div class="about-list"></div>
+            </div>
         </section>
         <!-- Profile -->
         <section id="profile">
             <div class="profile-content">
                 <header>
-                    <h1>Our Profile</h1>
+                    <h1>My Profile</h1>
                 </header>
                 <div class="profile-list">
                     <div class="profile-items">
                         <div class="profile-img"></div>
-                        <h2 class="profile-text">Software Engineer</h2>
+                        <h2 class="profile-text">UI Designer</h2>
                     </div>
                     <div class="profile-items">
                         <div class="profile-img"></div>
-                        <h2 class="profile-text">UI Designer</h2>
+                        <h2 class="profile-text">Part-Time Teacher</h2>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Contact -->
+        <section id="contact">
+            <div class="contact-content">
+                <header>
+                    <h1>Contact Me</h1>
+                </header>
+                <div class="contact-list">
+                </div>
+            </div>
+        </section>
+        <!-- scrollup -->
+        <a id="back-to" href="#home">&uarr;</a>
     </main>
     <script src="./js/script.js"></script>
 </body>
