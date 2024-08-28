@@ -15,19 +15,22 @@
             <a href="#home">
                 <div id="logo"></div>
             </a>
-            <div class="list">
+            <div class="navbar-list">
                 <a class="nav-list" href="#home">Home</a>
                 <a class="nav-list" href="#about-me">About Me</a>
                 <a class="nav-list" href="#profile">Profile</a>
                 <a class="nav-list" href="#contact">Contact</a>
             </div>
+            <div id="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
         <!-- Content -->
         <!-- Home -->
         <section id="home">
-            <header>
-                <h1>Hello <span id="username"></span>, Welcome</h1>
-            </header>
+            <h1>Hello <span id="username"></span>, Welcome</h1>
             <img src="./img/christopher-gower-_aXa21cf7rY-unsplash.jpg" alt="UI Designer">
             <img src="./img/kari-shea-1SAnrIxw5OY-unsplash.jpg" alt="Software Engineer">
             <img src="./img/nordwood-themes-q8U1YgBaRQk-unsplash.jpg" alt="Part-Time Teacher">
@@ -35,25 +38,27 @@
         <!-- About Me -->
         <section id="about-me">
             <div class="about-content">
-                <header>
-                    <h1>About Me</h1>
-                </header>
-                <div class="about-list"></div>
+                <h1>About Me</h1>
+                <div class="about-list">
+                    <p>As a passionate UI Designer and Front-End Developer, I am driven to create innovative and
+                        engaging digital experiences.
+                        I have a proven ability to translate design concepts into functional, responsive web
+                        applications. I am eager to
+                        contribute my skills to a dynamic team and work on challenging projects.</p>
+                </div>
             </div>
         </section>
         <!-- Profile -->
         <section id="profile">
             <div class="profile-content">
-                <header>
-                    <h1>My Profile</h1>
-                </header>
+                <h1>My Profile</h1>
                 <div class="profile-list">
                     <div class="profile-items">
-                        <div class="profile-img"></div>
+                        <div class="profile-img-1"></div>
                         <h2 class="profile-text">UI Designer</h2>
                     </div>
                     <div class="profile-items">
-                        <div class="profile-img"></div>
+                        <div class="profile-img-2"></div>
                         <h2 class="profile-text">Part-Time Teacher</h2>
                     </div>
                 </div>
@@ -62,15 +67,46 @@
         <!-- Contact -->
         <section id="contact">
             <div class="contact-content">
-                <header>
-                    <h1>Contact Me</h1>
-                </header>
+                <h1>Contact Me</h1>
                 <div class="contact-list">
+                    <div class="input-contact">
+                        <form name="contact-form" id="contact-form">
+                            <!-- input name -->
+                            <div class="input-name">
+                                <label for="input-name">Name</label>
+                                <input type="text" name="input-name" id="input-name" placeholder="Insert Name">
+                                <span id="name-error"></span>
+                            </div>
+                            <!-- input email -->
+                            <div class="input-email">
+                                <label for="email">Email</label>
+                                <input type="text" name="input-email" id="input-email" placeholder="Insert Email">
+                                <div id="email-error"></div>
+                            </div>
+                            <!-- input message -->
+                            <div class="input-message">
+                                <label for="message">Message</label>
+                                <textarea type="text" name="input-message" id="input-message" cols="30" rows="5"
+                                    placeholder="Insert Message"></textarea>
+                            </div>
+                            <!-- submit button -->
+                            <button id="submit-button" type="submit">Send</button>
+                        </form>
+                    </div>
+                    <div class="output">
+                        <h2>Output</h2>
+                        <div class="output-contact">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- scrollup -->
         <a id="back-to" href="#home">&uarr;</a>
+        <!-- footer -->
+        <div id="footer">
+            ISMAIL JUNDI 2024 &copy;
+        </div>
     </main>
     <script src="./js/script.js"></script>
 </body>
