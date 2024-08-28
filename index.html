@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Website</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/Slime Hejo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -74,14 +75,22 @@
                             <!-- input name -->
                             <div class="input-name">
                                 <label for="input-name">Name</label>
-                                <input type="text" name="input-name" id="input-name" placeholder="Insert Name">
-                                <span id="name-error"></span>
+                                <input type="text" name="input-name" id="input-name" placeholder="Insert Name"
+                                    onkeyup="validateName()">
+                                <div class="form-alert">
+                                    <div id="name-default"></div>
+                                    <div id="name-error"></div>
+                                </div>
                             </div>
                             <!-- input email -->
                             <div class="input-email">
                                 <label for="email">Email</label>
-                                <input type="text" name="input-email" id="input-email" placeholder="Insert Email">
-                                <div id="email-error"></div>
+                                <input type="text" name="input-email" id="input-email" placeholder="Insert Email"
+                                    onkeyup="validateEmail()">
+                                <div class="form-alert">
+                                    <div id="email-default"></div>
+                                    <div id="email-error"></div>
+                                </div>
                             </div>
                             <!-- input message -->
                             <div class="input-message">
